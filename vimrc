@@ -21,7 +21,7 @@ set smartindent
 set nohlsearch
 set directory-=.
 
-set statusline=%F\ [%Y,%{&fileencoding},%{&ff}]%=%m%R\ %3p%%,\ %L\ стр.\ [%l:%c]
+set statusline=%F\ [%Y,%{&fileencoding},%{&ff}]%=%m%R\ %3p%%,\ %L\ стр.\ [%l:%v]
 set laststatus=2
 
 " Disable opening top buffer with help info
