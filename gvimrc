@@ -9,6 +9,5 @@ set lines=50
 set columns=100
 set number
 set linespace=2
-winpos 20 40
 
 set visualbell t_vb=
