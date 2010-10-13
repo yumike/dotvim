@@ -1,5 +1,11 @@
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype plugin indent on
+
+set nocompatible
+
+set modelines=0
 
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -11,7 +17,6 @@ set scrolloff=2
 set ts=4 sts=4 sw=4 et
 
 set smartindent
-filetype plugin indent on
 
 set nohlsearch
 set directory-=.
