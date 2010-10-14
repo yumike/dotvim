@@ -19,7 +19,6 @@ set ts=4 sts=4 sw=4 et
 set smartindent
 
 set nohlsearch
-set directory-=.
 
 set statusline=%F\ [%Y,%{&fileencoding},%{&ff}]%=%m%R\ %3p%%,\ %L\ стр.\ [%l:%v]
 set laststatus=2
