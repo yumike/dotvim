@@ -33,8 +33,6 @@ endif
 nmap <Space> za
 nmap <F2> :set filetype=htmldjango<cr>
 
-let g:GetLatestVimScripts_allowautoinstall=1
-
 set visualbell t_vb=
 
 autocmd FileType html setlocal ts=2 sts=2 sw=2 noet
