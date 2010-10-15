@@ -39,3 +39,5 @@ endif
 
 nmap <Space> za
 nmap <F2> :set filetype=htmldjango<cr>
+
+let g:netrw_list_hide='\.py[co]$,\.swp$'
