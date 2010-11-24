@@ -45,3 +45,5 @@ let g:netrw_list_hide='\.py[co]$,\.swp$'
 
 let NERDTreeIgnore=['\.py[co]$', '\.swp$']
 map <Leader>n :NERDTreeToggle<CR>
+
+let coffee_no_trailing_space_error=1
