@@ -31,6 +31,7 @@ set visualbell t_vb=
 if has("autocmd")
     autocmd FileType html setlocal ts=2 sts=2 sw=2 noet
     autocmd FileType htmldjango setlocal ts=2 sts=2 sw=2 noet
+    autocmd FileType javascript setlocal ts=2 sts=2 sw=2 et
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 et
     autocmd FileType coffee setlocal ts=2 sts=2 sw=2 et
     if executable("enca")
