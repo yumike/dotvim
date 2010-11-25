@@ -1,5 +1,11 @@
+snippet %
+	{% ${1} %}${2}
+snippet {
+	{{ ${1} }}${2}
 snippet extends
 	{% extends "${1:base.html}" %}${2}
+snippet load
+	{% load ${1:libraries} %}${2}
 snippet block
 	{% block ${1:name} %}${2:content}{% endblock %}${3}
 snippet blockn
