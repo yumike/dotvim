@@ -17,3 +17,7 @@ set visualbell t_vb=
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
+if filereadable(expand("~/.gvimrc.local"))
+    source ~/.gvimrc.local
+endif
