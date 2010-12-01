@@ -29,7 +29,7 @@ set completeopt=menu,longest
 set visualbell t_vb=
 
 if has("autocmd")
-    autocmd FileType html setlocal ts=2 sts=2 sw=2 noet
+    autocmd BufNewFile,BufRead *.html set filetype=htmldjango
     autocmd FileType htmldjango setlocal ts=2 sts=2 sw=2 noet
     autocmd FileType javascript setlocal ts=2 sts=2 sw=2 et
     autocmd FileType json setlocal ts=2 sts=2 sw=2 et
