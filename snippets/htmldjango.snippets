@@ -12,3 +12,15 @@ snippet blockn
 	{% block ${1:name} %}
 		${2:content}
 	{% endblock %}
+snippet if
+	{% if ${1:confdition} %}${2:content}{% endif %}${3}
+snippet ifn
+	{% if ${1:condition} %}
+		${2:content}
+	{% endif %}
+snippet for
+	{% for ${1:object} in ${2:object_list} %}${3:content}{% endfor %}
+snippet forn
+	{% for ${1:object} in ${2:object_list} %}
+		${3:content}
+	{% endfor %}
