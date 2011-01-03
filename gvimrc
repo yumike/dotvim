@@ -1,4 +1,4 @@
-set guifont=Monaco:h12
+set guifont=Menlo:h12
 colorscheme wombat
 set cmdheight=1
 set nohlsearch
@@ -8,7 +8,7 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
-set lines=50
+set lines=55
 set columns=140
 set number
 set linespace=2
