@@ -16,3 +16,9 @@
 [submodule "bundle/json"]
 	path = bundle/json
 	url = git://github.com/leshill/vim-json.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/surround.vim"]
+	path = bundle/surround.vim
+	url = git://github.com/tpope/vim-surround.git
