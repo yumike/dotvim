@@ -19,6 +19,3 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/surround.vim"]
-	path = bundle/surround.vim
-	url = git://github.com/tpope/vim-surround.git
