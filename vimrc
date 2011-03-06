@@ -35,6 +35,7 @@ if has("autocmd")
     autocmd FileType javascript setlocal ts=2 sts=2 sw=2 et
     autocmd FileType json setlocal ts=2 sts=2 sw=2 et
     autocmd FileType ruby setlocal ts=2 sts=2 sw=2 et
+    autocmd FileType sh setlocal ts=2 sts=2 sw=2 et
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 et
     if executable("enca")
         autocmd BufReadPre * call SetEncoding(expand('<afile>'))
