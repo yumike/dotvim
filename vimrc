@@ -15,6 +15,7 @@ set showcmd
 set scrolloff=2
 
 set ts=4 sts=4 sw=4 et
+set nowrap
 
 set smartindent
 set nohlsearch
