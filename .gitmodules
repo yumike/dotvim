@@ -19,3 +19,9 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/indentanything"]
+	path = bundle/indentanything
+	url = git://github.com/vim-scripts/IndentAnything.git
+[submodule "bundle/ruby.vim"]
+	path = bundle/ruby.vim
+	url = git://github.com/vim-scripts/ruby.vim--IGREQUE.git
