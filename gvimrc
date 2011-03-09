@@ -9,14 +9,11 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 set lines=55
-set columns=140
+set columns=110
 set number
 set linespace=2
 
 set visualbell t_vb=
-
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
 
 if filereadable(expand("~/.gvimrc.local"))
     source ~/.gvimrc.local
