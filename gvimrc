@@ -1,5 +1,6 @@
 set guifont=Menlo:h12
-colorscheme wombat
+set background=dark
+colorscheme solarized
 set cmdheight=1
 set nohlsearch
 set guioptions-=T
