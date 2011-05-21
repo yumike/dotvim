@@ -14,7 +14,7 @@ set showcmd
 
 set scrolloff=2
 
-set ts=4 sts=4 sw=4 et
+set ts=2 sts=2 sw=2 et
 set nowrap
 
 set smartindent
@@ -32,17 +32,7 @@ set visualbell t_vb=
 if has("autocmd")
     autocmd BufNewFile,BufRead *.html set filetype=htmldjango
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
-    autocmd FileType coffee setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType css setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType htmldjango setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType javascript setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType json setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType less setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType rst setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType ruby setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType sh setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType stylus setlocal ts=2 sts=2 sw=2 et
-    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 et
+    autocmd FileType python setlocal ts=4 sts=4 sw=4 et
     if executable("enca")
         autocmd BufReadPre * call SetEncoding(expand('<afile>'))
     endif
