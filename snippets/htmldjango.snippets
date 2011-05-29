@@ -1,26 +1,26 @@
 snippet %
-	{% ${1} %}${2}
+	{% ${1} %}
 snippet {
-	{{ ${1} }}${2}
+	{{ ${1} }}
 snippet extends
-	{% extends "${1:base.html}" %}${2}
+	{% extends "${1:base.html}" %}
 snippet load
-	{% load ${1:libraries} %}${2}
+	{% load ${1} %}
 snippet block
-	{% block ${1:name} %}${2:content}{% endblock %}${3}
+	{% block ${1} %}${2}{% endblock %}
 snippet blockn
-	{% block ${1:name} %}
-		${2:content}
+	{% block ${1} %}
+		${2}
 	{% endblock %}
 snippet if
-	{% if ${1:confdition} %}${2:content}{% endif %}${3}
+	{% if ${1} %}${2}{% endif %}
 snippet ifn
-	{% if ${1:condition} %}
-		${2:content}
+	{% if ${1} %}
+		${2}
 	{% endif %}
 snippet for
-	{% for ${1:object} in ${2:object_list} %}${3:content}{% endfor %}
+	{% for ${1:object} in ${2:object_list} %}${3}{% endfor %}
 snippet forn
 	{% for ${1:object} in ${2:object_list} %}
-		${3:content}
+		${3}
 	{% endfor %}
