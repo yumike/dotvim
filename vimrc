@@ -30,7 +30,7 @@ set completeopt=menu,longest
 set visualbell t_vb=
 
 if has("autocmd")
-    autocmd BufNewFile,BufRead *.html set filetype=htmldjango
+    autocmd BufNewFile,BufRead *.html set filetype=htmldjango.html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd FileType python,snippet setlocal ts=4 sts=4 sw=4 et
     autocmd FileType python set ft=python.django
