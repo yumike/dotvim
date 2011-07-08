@@ -31,18 +31,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/vim-jade"]
-	path = bundle/vim-jade
-	url = https://github.com/digitaltoad/vim-jade.git
-[submodule "bundle/vim-less"]
-	path = bundle/vim-less
-	url = https://github.com/lunaru/vim-less
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus
-[submodule "bundle/vim-rake"]
-	path = bundle/vim-rake
-	url = https://github.com/tpope/vim-rake.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
