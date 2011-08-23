@@ -46,9 +46,6 @@
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule "IndentAnything"]
-	path = IndentAnything
-	url = https://github.com/vim-scripts/IndentAnything.git
 [submodule "bundle/indentanything"]
 	path = bundle/indentanything
 	url = https://github.com/vim-scripts/IndentAnything.git
