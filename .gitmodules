@@ -49,3 +49,6 @@
 [submodule "bundle/indentanything"]
 	path = bundle/indentanything
 	url = https://github.com/vim-scripts/IndentAnything.git
+[submodule "bundle/delimitmate"]
+	path = bundle/delimitmate
+	url = git://github.com/Raimondi/delimitMate.git
