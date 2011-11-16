@@ -44,6 +44,9 @@ endif
 nmap <Space> za
 nmap <F2> :set filetype=htmldjango<cr>
 
+inoremap <C-CR> <Esc>o
+inoremap <C-S-CR> <Esc>O
+
 let g:netrw_list_hide='\.py[co]$,\.swp$'
 
 let NERDTreeIgnore=['\.py[co]$', '\.swp$']
