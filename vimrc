@@ -30,6 +30,7 @@ set completeopt=menu,longest
 set visualbell t_vb=
 
 if has("autocmd")
+    autocmd BufNewFile,BufRead *.md set filetype=markdown
     autocmd BufNewFile,BufRead *.html set filetype=htmldjango.html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
