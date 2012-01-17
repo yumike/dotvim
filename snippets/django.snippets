@@ -4,3 +4,5 @@ snippet urlpatterns
 	)
 snippet url
 	url(r'^${1}', ${2}),
+snippet urli
+	url(r'^${1}', include('${2}')),
