@@ -29,6 +29,8 @@ set completeopt=menu,longest
 
 set visualbell t_vb=
 
+set wildignore+=*.pyc,*.git
+
 if has("autocmd")
     autocmd BufNewFile,BufRead *.md set filetype=markdown
     autocmd BufNewFile,BufRead *.html set filetype=htmldjango.html
@@ -63,3 +65,5 @@ let g:user_zen_settings = {
 \       'indentation': '  '
 \   }
 \}
+
+let g:CommandTMaxHeight=5
