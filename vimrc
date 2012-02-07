@@ -58,12 +58,9 @@ let python_no_builtin_highlight=1
 let coffee_no_trailing_space_error=1
 
 let g:user_zen_settings = {
+\   'indentation': '  ',
 \   'lang': 'ru',
-\   'charset': 'utf-8',
-\   'html': {
-\       'filters': 'html',
-\       'indentation': '  '
-\   }
+\   'charset': 'utf-8'
 \}
 
 let g:CommandTMaxHeight=5
