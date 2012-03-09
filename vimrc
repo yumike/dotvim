@@ -7,6 +7,14 @@ set nocompatible
 
 set modelines=0
 
+syntax enable
+set background=dark
+colorscheme solarized
+
+set cmdheight=1
+set nohlsearch
+set number
+
 set list
 set listchars=tab:▸\ ,eol:¬
 
