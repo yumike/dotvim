@@ -63,6 +63,9 @@ let NERDTreeIgnore=['\.py[co]$', '\.swp$']
 map <Leader>n :NERDTreeToggle<CR>
 
 let python_no_builtin_highlight=1
+let python_no_doctest_code_highlight=1
+let python_no_doctest_highlight=1
+
 let coffee_no_trailing_space_error=1
 
 let g:user_zen_settings = {
