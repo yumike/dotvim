@@ -75,3 +75,9 @@ let g:user_zen_settings = {
 \}
 
 let g:CommandTMaxHeight=5
+
+augroup CommandTExtension
+  autocmd!
+  autocmd FocusGained * CommandTFlush
+  autocmd BufWritePost * CommandTFlush
+augroup END
