@@ -41,7 +41,7 @@ set wildignore+=*.pyc,*.git
 
 if has("autocmd")
     autocmd BufNewFile,BufRead *.md set filetype=markdown
-    autocmd BufNewFile,BufRead *.html set filetype=htmldjango.html
+    autocmd BufNewFile,BufRead *.html set filetype=jinja.html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd FileType python,snippet setlocal ts=4 sts=4 sw=4 et
