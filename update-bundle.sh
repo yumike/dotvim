@@ -6,6 +6,7 @@ do
     echo ""
     echo "Update bundle/$dir"
     cd "bundle/$dir"
+    git clean -f
     git checkout master
     git pull
     cd ../..
