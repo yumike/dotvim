@@ -37,7 +37,7 @@ set completeopt=menu,longest
 
 set visualbell t_vb=
 
-set wildignore+=*.pyc,*.git
+set wildignore+=*.pyc,*.git,node_modules
 
 if has("autocmd")
     autocmd BufNewFile,BufRead *.md set filetype=markdown
