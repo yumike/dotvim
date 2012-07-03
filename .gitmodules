@@ -58,3 +58,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-rust"]
+	path = bundle/vim-rust
+	url = https://github.com/orftz/vim-rust
