@@ -44,6 +44,7 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.html set filetype=jinja.html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+    autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
     autocmd FileType python,snippet setlocal ts=4 sts=4 sw=4 et
     autocmd FileType python set ft=python.django
     if executable("enca")
