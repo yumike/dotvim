@@ -64,3 +64,6 @@
 [submodule "bundle/vim-rust"]
 	path = bundle/vim-rust
 	url = https://github.com/orftz/vim-rust
+[submodule "bundle/salt-vim"]
+	path = bundle/salt-vim
+	url = https://github.com/saltstack/salt-vim.git
