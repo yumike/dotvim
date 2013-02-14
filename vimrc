@@ -73,6 +73,7 @@ let coffee_no_trailing_space_error=1
 
 let g:ctrlp_show_hidden = 0
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_open_new_file = 'r'
 
 let g:user_zen_settings = {
 \   'indentation': '  ',
