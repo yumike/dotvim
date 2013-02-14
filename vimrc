@@ -16,6 +16,7 @@ colorscheme solarized
 
 set cmdheight=1
 set nohlsearch
+set nofoldenable
 set number
 
 set list
