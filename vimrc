@@ -5,6 +5,9 @@ filetype plugin indent on
 
 set nocompatible
 
+set nobackup
+set nowritebackup
+
 set modelines=0
 
 syntax enable
