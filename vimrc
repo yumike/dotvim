@@ -40,6 +40,8 @@ set visualbell t_vb=
 set wildignore+=*.pyc,*.git,node_modules
 
 if has("autocmd")
+    autocmd BufNewFile,BufRead *.x set filetype=alex
+    autocmd BufNewFile,BufRead *.y set filetype=happy
     autocmd BufNewFile,BufRead *.md set filetype=markdown
     autocmd BufNewFile,BufRead *.html set filetype=jinja.html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
