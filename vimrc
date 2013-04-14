@@ -12,7 +12,7 @@ set modelines=0
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme jellybeans
 
 set cmdheight=1
 set nohlsearch
