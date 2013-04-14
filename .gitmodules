@@ -76,3 +76,6 @@
 [submodule "bundle/cabal.vim"]
 	path = bundle/cabal.vim
 	url = https://github.com/Twinside/vim-syntax-haskell-cabal
+[submodule "bundle/vim-hilinktrace"]
+	path = bundle/vim-hilinktrace
+	url = https://github.com/gerw/vim-HiLinkTrace.git
