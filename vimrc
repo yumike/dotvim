@@ -83,6 +83,10 @@ let g:ctrlp_show_hidden = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_open_new_file = 'r'
 
+let g:is_posix = 1
+let g:sh_no_error = 1
+let g:is_bash = 1
+
 let g:user_zen_settings = {
 \   'indentation': '  ',
 \   'lang': 'ru',
