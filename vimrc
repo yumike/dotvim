@@ -42,7 +42,7 @@ set completeopt=menu,longest
 
 set visualbell t_vb=
 
-set wildignore+=*.pyc,*.git,node_modules,*/vendor/bundle/*
+set wildignore+=*.pyc,*.git,htmlcov,node_modules,tmp,*/vendor/bundle/*
 
 if has("autocmd")
     autocmd BufNewFile,BufRead *.x set filetype=alex
