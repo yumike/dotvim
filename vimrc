@@ -8,7 +8,8 @@ set nocompatible
 set nobackup
 set nowritebackup
 
-set modelines=0
+set modeline
+set modelines=5
 
 syntax enable
 set background=dark
