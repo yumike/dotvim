@@ -47,7 +47,7 @@ set wildignore+=*.pyc,*.git,htmlcov,node_modules,tmp,*/vendor/bundle/*
 if has("autocmd")
     autocmd BufNewFile,BufRead *.x set filetype=alex
     autocmd BufNewFile,BufRead *.y set filetype=happy
-    autocmd BufNewFile,BufRead *.md set filetype=markdown
+    autocmd BufNewFile,BufRead *.md set filetype=mkd
     autocmd BufNewFile,BufRead *.html set filetype=jinja.html
     autocmd BufNewFile,BufRead *.jinja set filetype=jinja
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
