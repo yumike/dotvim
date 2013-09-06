@@ -49,7 +49,9 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.y set filetype=happy
     autocmd BufNewFile,BufRead *.md set filetype=mkd
     autocmd BufNewFile,BufRead *.html set filetype=jinja.html
+    autocmd BufNewFile,BufRead *.j2 set filetype=jinja
     autocmd BufNewFile,BufRead *.jinja set filetype=jinja
+    autocmd BufNewFile,BufRead *.hbs set filetype=html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
