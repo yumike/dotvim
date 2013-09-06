@@ -92,3 +92,6 @@ let g:user_zen_settings = {
 \   'lang': 'ru',
 \   'charset': 'utf-8'
 \}
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'tomorrow'
