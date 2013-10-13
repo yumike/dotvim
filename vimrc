@@ -95,3 +95,16 @@ let g:user_zen_settings = {
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tomorrow'
+
+" Pytest
+map <Leader>tm :Pytest method<CR>
+map <Leader>tc :Pytest class<CR>
+map <Leader>tf :Pytest file<CR>
+map <Leader>ts :Pytest session<CR>
+
+" Dash
+nmap <Leader>df :Dash <cword> flask<CR>
+nmap <Leader>dw :Dash <cword> werkzeug<CR>
+nmap <Leader>ds :Dash <cword> sqlalchemy<CR>
+nmap <Leader>dh :Dash <cword> haskell<CR>
+nmap <Leader>dg :Dash!<CR>
