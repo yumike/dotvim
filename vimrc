@@ -22,6 +22,7 @@ set number
 
 set list
 set listchars=tab:▸\ ,eol:¬
+set fillchars=diff:·
 
 set showcmd
 
@@ -48,7 +49,7 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.x set filetype=alex
     autocmd BufNewFile,BufRead *.y set filetype=happy
     autocmd BufNewFile,BufRead *.md set filetype=mkd
-    autocmd BufNewFile,BufRead *.html set filetype=jinja.html
+    autocmd BufNewFile,BufRead *.html set filetype=htmljinja.html
     autocmd BufNewFile,BufRead *.j2 set filetype=jinja
     autocmd BufNewFile,BufRead *.jinja set filetype=jinja
     autocmd BufNewFile,BufRead *.hbs set filetype=html
@@ -56,7 +57,6 @@ if has("autocmd")
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
     autocmd FileType python,snippet,erlang setlocal ts=4 sts=4 sw=4 et
-    autocmd FileType python set ft=python.django
     if executable("enca")
         autocmd BufReadPre * call SetEncoding(expand('<afile>'))
     endif
