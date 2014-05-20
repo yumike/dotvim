@@ -41,6 +41,8 @@ set visualbell t_vb=
 set wildignore+=*.pyc,*.git,htmlcov,node_modules,tmp,*/vendor/bundle/*
 
 if has("autocmd")
+  augroup FileTypeCheck
+    autocmd!
     autocmd BufNewFile,BufRead *.x set filetype=alex
     autocmd BufNewFile,BufRead *.y set filetype=happy
     autocmd BufNewFile,BufRead *.md set filetype=mkd
@@ -51,8 +53,12 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd BufNewFile,BufRead *.sql set filetype=pgsql
+
+  augroup FileTypeOptions
+    autocmd!
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
     autocmd FileType python,snippet setlocal ts=4 sts=4 sw=4 et
+  augroup END
 endif
 
 nmap <F2> :set filetype=htmldjango<cr>
