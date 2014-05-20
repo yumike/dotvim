@@ -100,5 +100,4 @@ map <Leader>ts :Pytest session<CR>
 nmap <Leader>df :Dash <cword> flask<CR>
 nmap <Leader>dw :Dash <cword> werkzeug<CR>
 nmap <Leader>ds :Dash <cword> sqlalchemy<CR>
-nmap <Leader>dh :Dash <cword> haskell<CR>
 nmap <Leader>dg :Dash!<CR>

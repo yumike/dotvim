@@ -4,3 +4,6 @@ map <LocalLeader>gr :GhcModTypeClear<CR>
 map <LocalLeader>gc :GhcModCheck<CR>
 map <LocalLeader>gl :GhcModLint<CR>
 map <LocalLeader>ge :GhcModExpand<CR>
+
+" Dash
+map <LocalLeader>d :Dash <cword> haskell<CR>
