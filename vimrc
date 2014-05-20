@@ -85,6 +85,13 @@ let g:is_bash = 1
 " Turn of search highlighting until the next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" ghc-mod
+map <Leader>ht :GhcModType<CR>
+map <Leader>hr :GhcModTypeClear<CR>
+map <Leader>hc :GhcModCheck<CR>
+map <Leader>hl :GhcModLint<CR>
+map <Leader>he :GhcModExpand<CR>
+
 " Pytest
 map <Leader>tm :Pytest method<CR>
 map <Leader>tc :Pytest class<CR>
