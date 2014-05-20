@@ -112,3 +112,6 @@
 [submodule "bundle/pgsql.vim"]
 	path = bundle/pgsql.vim
 	url = https://github.com/exu/pgsql.vim.git
+[submodule "bundle/vimerl"]
+	path = bundle/vimerl
+	url = https://github.com/jimenezrick/vimerl.git
