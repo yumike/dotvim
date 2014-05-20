@@ -61,9 +61,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/mako.vim"]
-	path = bundle/mako.vim
-	url = https://github.com/vim-scripts/mako.vim
 [submodule "bundle/alex.vim"]
 	path = bundle/alex.vim
 	url = https://github.com/vim-scripts/alex.vim
