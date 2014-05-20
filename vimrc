@@ -4,9 +4,6 @@ filetype plugin indent on
 
 set nocompatible
 
-set modeline
-set modelines=5
-
 syntax enable
 set background=dark
 colorscheme jellybeans
