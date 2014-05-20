@@ -52,7 +52,7 @@ if has("autocmd")
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd BufNewFile,BufRead *.sql set filetype=pgsql
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
-    autocmd FileType python,snippet,erlang setlocal ts=4 sts=4 sw=4 et
+    autocmd FileType python,snippet setlocal ts=4 sts=4 sw=4 et
 endif
 
 nmap <F2> :set filetype=htmldjango<cr>
