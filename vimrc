@@ -65,6 +65,9 @@ endif
 
 nmap <F2> :set filetype=htmldjango<cr>
 
+let mapleader = "\\"
+let maplocalleader = ","
+
 let g:netrw_list_hide='\.py[co]$,\.swp$'
 
 let NERDTreeIgnore=['\.py[co]$', '\.swp$']
