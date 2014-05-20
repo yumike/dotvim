@@ -2,8 +2,10 @@ filetype off
 execute pathogen#infect()
 filetype plugin indent on
 
+" Disable compatibility with vi
 set nocompatible
 
+" Enable syntax highlighting and configure color scheme
 syntax enable
 set background=dark
 colorscheme jellybeans
