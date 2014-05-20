@@ -52,16 +52,9 @@ if has("autocmd")
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
     autocmd FileType python,snippet,erlang setlocal ts=4 sts=4 sw=4 et
-    if executable("enca")
-        autocmd BufReadPre * call SetEncoding(expand('<afile>'))
-    endif
 endif
 
-nmap <Space> za
 nmap <F2> :set filetype=htmldjango<cr>
-
-inoremap <C-CR> <Esc>o
-inoremap <C-S-CR> <Esc>O
 
 let g:netrw_list_hide='\.py[co]$,\.swp$'
 
@@ -84,15 +77,6 @@ let g:is_bash = 1
 
 " Turn of search highlighting until the next search
 nnoremap <C-L> :nohl<CR><C-L>
-
-let g:user_zen_settings = {
-\   'indentation': '  ',
-\   'lang': 'ru',
-\   'charset': 'utf-8'
-\}
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'tomorrow'
 
 " Pytest
 map <Leader>tm :Pytest method<CR>
