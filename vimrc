@@ -50,6 +50,7 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.hbs set filetype=html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+    autocmd BufNewFile,BufRead *.sql set filetype=pgsql
     autocmd FileType go setlocal ts=4 sts=4 sw=4 noet nolist
     autocmd FileType python,snippet,erlang setlocal ts=4 sts=4 sw=4 et
 endif
