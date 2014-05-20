@@ -8,8 +8,11 @@ syntax enable
 set background=dark
 colorscheme jellybeans
 
+" Search incrementally and highlight matches
+set hlsearch
+set incsearch
+
 set cmdheight=1
-set nohlsearch
 set nofoldenable
 set number
 
@@ -25,7 +28,6 @@ set ts=2 sts=2 sw=2 et
 set nowrap
 
 set smartindent
-set nohlsearch
 set directory-=.
 
 set statusline=%F\ [%Y,%{&fileencoding},%{&ff}]%=%m%R\ %3p%%,\ %L\ стр.\ [%l:%v]
@@ -79,6 +81,9 @@ let g:ctrlp_open_new_file = 'r'
 let g:is_posix = 1
 let g:sh_no_error = 1
 let g:is_bash = 1
+
+" Turn of search highlighting until the next search
+nnoremap <C-L> :nohl<CR><C-L>
 
 let g:user_zen_settings = {
 \   'indentation': '  ',
