@@ -1,9 +1,9 @@
 " ghc-mod
-map <LocalLeader>gt :GhcModType<CR>
-map <LocalLeader>gr :GhcModTypeClear<CR>
-map <LocalLeader>gc :GhcModCheck<CR>
-map <LocalLeader>gl :GhcModLint<CR>
-map <LocalLeader>ge :GhcModExpand<CR>
+map <buffer> <LocalLeader>gt :GhcModType<CR>
+map <buffer> <LocalLeader>gr :GhcModTypeClear<CR>
+map <buffer> <LocalLeader>gc :GhcModCheck<CR>
+map <buffer> <LocalLeader>gl :GhcModLint<CR>
+map <buffer> <LocalLeader>ge :GhcModExpand<CR>
 
 " Dash
-map <LocalLeader>d :Dash <cword> haskell<CR>
+map <buffer> <LocalLeader>d :Dash <cword> haskell<CR>
