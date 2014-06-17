@@ -9,7 +9,10 @@ update:
 	git submodule init
 	git submodule update
 
-update-bundle:
+bundle:
+	mkdir bundle
+
+update-bundle: bundle
 	./update-bundle.sh
 
 .PHONY: install update update-bundle
