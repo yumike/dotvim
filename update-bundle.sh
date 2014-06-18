@@ -40,10 +40,8 @@ plugins=(
 for name in "${(@ko)plugins}"; do
   if [ -d "bundle/$name" ]; then
     echo "Updating bundle/$name"
-    cd "bundle/$name"
-    git clean -fd
-    git pull
-    cd ../..
+    git -C "bundle/$name" clean -fd
+    git -C "bundle/$name" pull
   else
     echo "Installing bundle/$name"
     git clone "$plugins[$name]" "bundle/$name"
