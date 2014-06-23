@@ -14,6 +14,9 @@ colorscheme jellybeans
 set hlsearch
 set incsearch
 
+" Show filler and split vertically by default in diff mode
+set diffopt=filler,vertical
+
 set cmdheight=1
 set nofoldenable
 set number
