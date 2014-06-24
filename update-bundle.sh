@@ -28,6 +28,7 @@ plugins=(
   json              https://github.com/leshill/vim-json.git
   less              https://github.com/groenewege/vim-less.git
   markdown          https://github.com/plasticboy/vim-markdown.git
+  multiple-cursors  https://github.com/terryma/vim-multiple-cursors.git
   nerdtree          https://github.com/scrooloose/nerdtree.git
   nginx             https://github.com/vim-scripts/nginx.vim.git
   pgsql             https://github.com/exu/pgsql.vim.git
