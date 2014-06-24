@@ -76,6 +76,9 @@ let g:netrw_list_hide='\.py[co]$,\.swp$'
 let NERDTreeIgnore=['\.py[co]$', '\.swp$']
 map <Leader>n :NERDTreeToggle<CR>
 
+" Disable folding markdown sections
+let g:vim_markdown_folding_disabled=1
+
 let python_no_builtin_highlight=1
 let python_no_doctest_code_highlight=1
 let python_no_doctest_highlight=1
