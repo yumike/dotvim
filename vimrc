@@ -43,7 +43,7 @@ set completeopt=menu,longest
 
 set visualbell t_vb=
 
-set wildignore+=*.pyc,*.git,*.o,*.hi,htmlcov,node_modules,tmp,*/vendor/bundle/*
+set wildignore+=*.pyc,*.git,*.o,*.hi,htmlcov,node_modules,tmp,target,*/vendor/bundle/*
 
 if has("autocmd")
   augroup FileTypeCheck
