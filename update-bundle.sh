@@ -36,6 +36,7 @@ plugins=(
   rust              https://github.com/wting/rust.vim.git
   sexp              https://github.com/guns/vim-sexp.git
   stylus            https://github.com/wavded/vim-stylus.git
+  surround          https://github.com/tpope/vim-surround.git
   tabular           https://github.com/godlygeek/tabular.git
   vimerl            https://github.com/jimenezrick/vimerl.git
   vimproc           https://github.com/Shougo/vimproc.vim.git
