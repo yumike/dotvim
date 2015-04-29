@@ -33,6 +33,7 @@ plugins=(
   nginx             https://github.com/vim-scripts/nginx.vim.git
   pgsql             https://github.com/exu/pgsql.vim.git
   pytest            https://github.com/alfredodeza/pytest.vim.git
+  python-mode       https://github.com/klen/python-mode.git
   ruby              https://github.com/vim-scripts/ruby.vim--IGREQUE.git
   rust              https://github.com/wting/rust.vim.git
   sexp              https://github.com/guns/vim-sexp.git
@@ -41,6 +42,7 @@ plugins=(
   tabular           https://github.com/godlygeek/tabular.git
   vimerl            https://github.com/jimenezrick/vimerl.git
   vimproc           https://github.com/Shougo/vimproc.vim.git
+  yaml              https://github.com/stephpy/vim-yaml.git
 )
 
 for name in "${(@ko)plugins}"; do
