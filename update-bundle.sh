@@ -2,7 +2,7 @@
 
 typeset -A plugins
 plugins=(
-  ack               https://github.com/mileszs/ack.vim.git
+  ag                https://github.com/rking/ag.vim.git
   alex              https://github.com/vim-scripts/alex.vim.git
   cabal             https://github.com/Twinside/vim-syntax-haskell-cabal.git
   clojure           https://github.com/guns/vim-clojure-static.git
