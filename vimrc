@@ -8,7 +8,7 @@ set nocompatible
 " Enable syntax highlighting and configure color scheme
 syntax enable
 set background=dark
-colorscheme jellybeans
+colorscheme onedark
 
 " Search incrementally and highlight matches
 set hlsearch
@@ -22,7 +22,7 @@ set nofoldenable
 set number
 
 set list
-set listchars=tab:▸\ ,eol:¬
+" set listchars=tab:▸\ ,eol:¬
 set fillchars=diff:·
 
 set showcmd
@@ -41,8 +41,6 @@ set laststatus=2
 " Disable opening top buffer with help info
 set completeopt=menu,longest
 
-set visualbell t_vb=
-
 set wildignore+=*.pyc,*.git,*.o,*.hi,htmlcov,node_modules,tmp,target,*/vendor/bundle/*
 
 if has("autocmd")
@@ -50,7 +48,6 @@ if has("autocmd")
     autocmd!
     autocmd BufNewFile,BufRead *.x set filetype=alex
     autocmd BufNewFile,BufRead *.y set filetype=happy
-    autocmd BufNewFile,BufRead *.md set filetype=mkd
     autocmd BufNewFile,BufRead *.html set filetype=htmljinja.html
     autocmd BufNewFile,BufRead *.j2 set filetype=jinja
     autocmd BufNewFile,BufRead *.jinja set filetype=jinja
@@ -74,7 +71,7 @@ let maplocalleader = ","
 let g:netrw_list_hide='\.py[co]$,\.swp$'
 
 let NERDTreeIgnore=['\.py[co]$', '\.swp$']
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>/ :NERDTreeToggle<CR>
 
 " Disable folding markdown sections
 let g:vim_markdown_folding_disabled=1
@@ -93,10 +90,14 @@ let g:is_posix = 1
 let g:sh_no_error = 1
 let g:is_bash = 1
 
-let g:pymode_trim_whitespaces = 0
-let g:pymode_options_max_line_length = 79
-let g:pymode_lint = 0
-let g:pymode_rope_complete_on_dot = 0
+let g:neomake_python_enabled_makers = ['flake8', 'pylint']
+let g:neomake_open_list = 1
+
+let g:jedi#popup_on_dot = 0
+let g:jedi#smart_auto_mappings = 0
+let g:jedi#show_call_signatures = 2
+
+let g:multi_cursor_exit_from_insert_mode = 0
 
 " Turn of search highlighting until the next search
 nnoremap <C-L> :nohl<CR><C-L>
@@ -109,6 +110,9 @@ map <Leader>tm :Pytest method<CR>
 map <Leader>tc :Pytest class<CR>
 map <Leader>tf :Pytest file<CR>
 map <Leader>ts :Pytest session<CR>
+
+" Neomake
+nmap <Leader>m :Neomake<CR>
 
 " Dash
 nmap <Leader>df :Dash <cword> flask<CR>
