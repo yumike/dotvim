@@ -2,8 +2,7 @@ filetype off
 execute pathogen#infect()
 filetype plugin indent on
 
-" Disable compatibility with vi
-set nocompatible
+set rtp+=~/usr/local/opt/fzf
 
 " Enable syntax highlighting and configure color scheme
 syntax enable
@@ -48,13 +47,17 @@ if has("autocmd")
     autocmd!
     autocmd BufNewFile,BufRead *.x set filetype=alex
     autocmd BufNewFile,BufRead *.y set filetype=happy
+    " autocmd BufNewFile,BufRead *.md set filetype=mkd.
     autocmd BufNewFile,BufRead *.html set filetype=htmljinja.html
     autocmd BufNewFile,BufRead *.j2 set filetype=jinja
     autocmd BufNewFile,BufRead *.jinja set filetype=jinja
     autocmd BufNewFile,BufRead *.hbs set filetype=html
     autocmd BufNewFile,BufRead *.handlebars set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+    autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
     autocmd BufNewFile,BufRead *.sql set filetype=pgsql
+    autocmd BufNewFile,BufRead *.cassandra set filetype=cql
+    autocmd BufNewFile,BufRead build.boot set filetype=clojure
 
   augroup FileTypeOptions
     autocmd!
@@ -90,14 +93,27 @@ let g:is_posix = 1
 let g:sh_no_error = 1
 let g:is_bash = 1
 
-let g:neomake_python_enabled_makers = ['flake8', 'pylint']
+let g:haskell_indent_if = 2
+let g:haskell_indent_case = 2
+let g:haskell_indent_let = 2
+
+let g:neomake_python_enabled_makers = ['pylint']
 let g:neomake_open_list = 1
+
+let g:pymode_trim_whitespaces = 0
+let g:pymode_options_max_line_length = 89
+let g:pymode_lint = 0
+let g:pymode_rope = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_goto_definition_cmd = 'e'
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#smart_auto_mappings = 0
 let g:jedi#show_call_signatures = 2
 
 let g:multi_cursor_exit_from_insert_mode = 0
+
+let g:clojure_fuzzy_indent_patterns = ["^go-loop$"]
 
 " Turn of search highlighting until the next search
 nnoremap <C-L> :nohl<CR><C-L>
