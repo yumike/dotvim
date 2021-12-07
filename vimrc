@@ -2,12 +2,28 @@ filetype off
 execute pathogen#infect()
 filetype plugin indent on
 
+call plug#begin()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
 set rtp+=~/usr/local/opt/fzf
+
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " Enable syntax highlighting and configure color scheme
 syntax enable
 set background=dark
 colorscheme onedark
+hi StatusLine   guifg=#000000 guibg=#b9c0ca
+hi StatusLineNC guifg=#000000 guibg=#59606a
+
 
 " Search incrementally and highlight matches
 set hlsearch
@@ -16,11 +32,12 @@ set incsearch
 " Show filler and split vertically by default in diff mode
 set diffopt=filler,vertical
 
+set signcolumn=yes
 set cmdheight=1
 set nofoldenable
 set number
 
-set list
+" set list
 " set listchars=tab:▸\ ,eol:¬
 set fillchars=diff:·
 
@@ -34,7 +51,7 @@ set nowrap
 set smartindent
 set directory-=.
 
-set statusline=%F\ [%Y,%{&fileencoding},%{&ff}]%=%m%R\ %3p%%,\ %L\ стр.\ [%l:%v]
+set statusline=%F\ [%Y]\ %{coc#status()}%=%m%R\ %3p%%\ [%l:%v/%L]
 set laststatus=2
 
 " Disable opening top buffer with help info
@@ -56,8 +73,10 @@ if has("autocmd")
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
     autocmd BufNewFile,BufRead *.sql set filetype=pgsql
+    autocmd BufNewFile,BufRead *.pyi set filetype=python
     autocmd BufNewFile,BufRead *.cassandra set filetype=cql
     autocmd BufNewFile,BufRead build.boot set filetype=clojure
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 
   augroup FileTypeOptions
     autocmd!
@@ -115,6 +134,13 @@ let g:multi_cursor_exit_from_insert_mode = 0
 
 let g:clojure_fuzzy_indent_patterns = ["^go-loop$"]
 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:dbext_default_profile_psql = 'type=PGSQL:host=devmetrics.cian.tech:port=5432:dbname=devmetrics:user=devmetrics'
+let g:dbext_default_profile = 'psql'
+
 " Turn of search highlighting until the next search
 nnoremap <C-L> :nohl<CR><C-L>
 
@@ -135,3 +161,9 @@ nmap <Leader>df :Dash <cword> flask<CR>
 nmap <Leader>dw :Dash <cword> werkzeug<CR>
 nmap <Leader>ds :Dash <cword> sqlalchemy<CR>
 nmap <Leader>dg :Dash!<CR>
+
+" Coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

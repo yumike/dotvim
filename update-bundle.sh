@@ -3,16 +3,13 @@
 typeset -A plugins
 plugins=(
   ag                https://github.com/rking/ag.vim.git
-  alex              https://github.com/vim-scripts/alex.vim.git
   clojure           https://github.com/guns/vim-clojure-static.git
   clojure-highlight https://github.com/guns/vim-clojure-highlight.git
   coffee-script     https://github.com/kchmck/vim-coffee-script.git
-  ctrlp             https://github.com/kien/ctrlp.vim.git
   dash              https://github.com/rizzatti/dash.vim.git
+  dbext             https://github.com/vim-scripts/dbext.vim
   dockerfile        https://github.com/honza/dockerfile.vim.git
-  emmet             https://github.com/mattn/emmet-vim.git
   fireplace         https://github.com/tpope/vim-fireplace.git
-  fugitive          https://github.com/tpope/vim-fugitive.git
   funcoo            https://github.com/rizzatti/funcoo.vim.git
   happy             https://github.com/vim-scripts/happy.vim.git
   hilinktrace       https://github.com/gerw/vim-HiLinkTrace.git
@@ -30,6 +27,7 @@ plugins=(
   neomake           https://github.com/benekastah/neomake
   nerdtree          https://github.com/scrooloose/nerdtree.git
   nginx             https://github.com/vim-scripts/nginx.vim.git
+  onedark           https://github.com/joshdick/onedark.vim
   pgsql             https://github.com/exu/pgsql.vim.git
   pytest            https://github.com/alfredodeza/pytest.vim.git
   ruby              https://github.com/vim-scripts/ruby.vim--IGREQUE.git
@@ -38,6 +36,7 @@ plugins=(
   stylus            https://github.com/wavded/vim-stylus.git
   surround          https://github.com/tpope/vim-surround.git
   tabular           https://github.com/godlygeek/tabular.git
+  taskpaper         https://github.com/davidoc/taskpaper.vim
   vimerl            https://github.com/jimenezrick/vimerl.git
   vimproc           https://github.com/Shougo/vimproc.vim.git
   vim-go            https://github.com/fatih/vim-go.git
