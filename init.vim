@@ -15,6 +15,7 @@ Plug 'Olical/conjure'
 Plug 'Olical/aniseed'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 call plug#end()
 
 let g:aniseed#env = v:true
