@@ -8,7 +8,5 @@
 (require "lconfig.filetypes")
 
 ;; Plugins
+(require "lconfig.plugins")
 (require "lconfig.coc")
-(require "lconfig.nerdtree")
-(require "lconfig.telescope")
-(require "lconfig.sexp")
