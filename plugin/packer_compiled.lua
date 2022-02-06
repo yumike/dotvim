@@ -195,14 +195,14 @@ time([[packadd for vim-sexp]], false)
 time([[Config for nvim-treesitter]], true)
 require("lconfig.plugins.treesitter").config()
 time([[Config for nvim-treesitter]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require("lconfig.plugins.lspconfig").config()
-time([[Config for nvim-lspconfig]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 require("lconfig.plugins.telescope").config()
 time([[Config for telescope.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require("lconfig.plugins.lspconfig").config()
+time([[Config for nvim-lspconfig]], false)
 if should_profile then save_profiles() end
 
 end)

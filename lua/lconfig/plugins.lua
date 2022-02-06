@@ -12,7 +12,7 @@ local function use(...)
 
   packer.startup(function(use)
     for _, spec in ipairs(specs) do
-      if (spec.mod ~= nil) then
+      if (type(spec) == "table" and spec.mod ~= nil) then
         local mod = require("lconfig.plugins." .. spec.mod)
         local fns = modfns(mod)
 
@@ -31,25 +31,25 @@ local function use(...)
 end
 
 return use(
-  {"wbthomason/packer.nvim"},
-  {"joshdick/onedark.vim"},
-  {"leafgarland/typescript-vim"},
-  {"peitalin/vim-jsx-typescript"},
-  {"guns/vim-clojure-static"},
-  {"Olical/conjure"},
+  "wbthomason/packer.nvim",
+  "joshdick/onedark.vim",
+  "leafgarland/typescript-vim",
+  "peitalin/vim-jsx-typescript",
+  "guns/vim-clojure-static",
+  "Olical/conjure",
   {"nvim-telescope/telescope-fzf-native.nvim", run = "make"},
   {"nvim-telescope/telescope.nvim", mod = "telescope", requires = {
     {"nvim-lua/plenary.nvim"}
   }},
-  {"tpope/vim-fugitive"},
+  "tpope/vim-fugitive",
   {"guns/vim-sexp", mod = "sexp"},
-  {"tpope/vim-sexp-mappings-for-regular-people"},
-  {"tpope/vim-surround"},
+  "tpope/vim-sexp-mappings-for-regular-people",
+  "tpope/vim-surround",
   {"scrooloose/nerdtree", mod = "nerdtree"},
   {"neoclide/coc.nvim", branch = "release"},
   {"iamcco/coc-diagnostic", run = "yarn install --frozen-lockfile && yarn build"},
   {"neovim/nvim-lspconfig", mod = "lspconfig"},
   {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", mod = "treesitter"},
-  {"nvim-treesitter/nvim-treesitter-textobjects"},
-  {"nvim-treesitter/playground"}
+  "nvim-treesitter/nvim-treesitter-textobjects",
+  "nvim-treesitter/playground"
 )
