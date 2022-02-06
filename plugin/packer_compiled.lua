@@ -69,16 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["coc-diagnostic"] = {
-    loaded = true,
-    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/coc-diagnostic",
-    url = "https://github.com/iamcco/coc-diagnostic"
-  },
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
-  },
   conjure = {
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/conjure",
@@ -177,13 +167,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Setup for: nerdtree
-time([[Setup for nerdtree]], true)
-require("lconfig.plugins.nerdtree").setup()
-time([[Setup for nerdtree]], false)
-time([[packadd for nerdtree]], true)
-vim.cmd [[packadd nerdtree]]
-time([[packadd for nerdtree]], false)
 -- Setup for: vim-sexp
 time([[Setup for vim-sexp]], true)
 require("lconfig.plugins.sexp").setup()
@@ -191,6 +174,13 @@ time([[Setup for vim-sexp]], false)
 time([[packadd for vim-sexp]], true)
 vim.cmd [[packadd vim-sexp]]
 time([[packadd for vim-sexp]], false)
+-- Setup for: nerdtree
+time([[Setup for nerdtree]], true)
+require("lconfig.plugins.nerdtree").setup()
+time([[Setup for nerdtree]], false)
+time([[packadd for nerdtree]], true)
+vim.cmd [[packadd nerdtree]]
+time([[packadd for nerdtree]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require("lconfig.plugins.treesitter").config()

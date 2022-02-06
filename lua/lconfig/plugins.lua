@@ -46,8 +46,6 @@ return use(
   "tpope/vim-sexp-mappings-for-regular-people",
   "tpope/vim-surround",
   {"scrooloose/nerdtree", mod = "nerdtree"},
-  {"neoclide/coc.nvim", branch = "release"},
-  {"iamcco/coc-diagnostic", run = "yarn install --frozen-lockfile && yarn build"},
   {"neovim/nvim-lspconfig", mod = "lspconfig"},
   {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", mod = "treesitter"},
   "nvim-treesitter/nvim-treesitter-textobjects",
