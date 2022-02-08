@@ -1,8 +1,6 @@
 local M = {}
 
-local function on_attach(client, bufnr)
-  vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-
+local function on_attach(_, bufnr)
   local opts = {noremap = true, silent = true}
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
@@ -13,7 +11,58 @@ end
 
 M.config = function()
   local lspconfig = require("lspconfig")
-  lspconfig.pyright.setup({on_attach = on_attach})
+
+  local capabilities = vim.lsp.protocol.make_client_capabilities()
+  capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+
+  lspconfig.pylsp.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    flags = {
+      debounce_text_changes = 150,
+    },
+    settings = {
+      pylsp = {
+        plugins = {
+          jedi_completion = {
+            enabled = true,
+            include_params = true,
+          },
+        },
+      },
+    },
+  })
+
+  local runtime_path = vim.split(package.path, ';')
+  table.insert(runtime_path, 'lua/?.lua')
+  table.insert(runtime_path, 'lua/?/init.lua')
+
+  lspconfig.sumneko_lua.setup({
+    settings = {
+      Lua = {
+        runtime = {
+          version = 'LuaJIT',
+          path = runtime_path,
+        },
+        diagnostics = {
+          globals = {'vim'},
+        },
+        completion = {
+          callSnippet = "Replace",
+          keywordSnippet = "Disable",
+          showWord = "Disable",
+        },
+        workspace = {
+          library = vim.api.nvim_get_runtime_file("", true),
+        },
+        telemetry = {
+          enable = false,
+        },
+      },
+    },
+    on_attach = on_attach,
+    capabilities = capabilities,
+  })
 end
 
 return M

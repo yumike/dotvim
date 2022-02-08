@@ -69,6 +69,36 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   conjure = {
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/conjure",
@@ -76,18 +106,25 @@ _G.packer_plugins = {
   },
   nerdtree = {
     loaded = true,
-    needs_bufread = false,
-    path = "/Users/yumike/.local/share/nvim/site/pack/packer/opt/nerdtree",
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/scrooloose/nerdtree"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-lspconfig"] = {
-    config = { 'require("lconfig.plugins.lspconfig").config()' },
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
-    config = { 'require("lconfig.plugins.treesitter").config()' },
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -107,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["pgsql.vim"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/pgsql.vim",
+    url = "https://github.com/lifepillar/pgsql.vim"
+  },
   playground = {
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/playground",
@@ -123,7 +165,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
-    config = { 'require("lconfig.plugins.telescope").config()' },
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
@@ -138,6 +179,16 @@ _G.packer_plugins = {
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/vim-clojure-static",
     url = "https://github.com/guns/vim-clojure-static"
   },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -150,8 +201,7 @@ _G.packer_plugins = {
   },
   ["vim-sexp"] = {
     loaded = true,
-    needs_bufread = false,
-    path = "/Users/yumike/.local/share/nvim/site/pack/packer/opt/vim-sexp",
+    path = "/Users/yumike/.local/share/nvim/site/pack/packer/start/vim-sexp",
     url = "https://github.com/guns/vim-sexp"
   },
   ["vim-sexp-mappings-for-regular-people"] = {
@@ -167,32 +217,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Setup for: vim-sexp
-time([[Setup for vim-sexp]], true)
-require("lconfig.plugins.sexp").setup()
-time([[Setup for vim-sexp]], false)
-time([[packadd for vim-sexp]], true)
-vim.cmd [[packadd vim-sexp]]
-time([[packadd for vim-sexp]], false)
--- Setup for: nerdtree
-time([[Setup for nerdtree]], true)
-require("lconfig.plugins.nerdtree").setup()
-time([[Setup for nerdtree]], false)
-time([[packadd for nerdtree]], true)
-vim.cmd [[packadd nerdtree]]
-time([[packadd for nerdtree]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require("lconfig.plugins.treesitter").config()
-time([[Config for nvim-treesitter]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-require("lconfig.plugins.telescope").config()
-time([[Config for telescope.nvim]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require("lconfig.plugins.lspconfig").config()
-time([[Config for nvim-lspconfig]], false)
 if should_profile then save_profiles() end
 
 end)

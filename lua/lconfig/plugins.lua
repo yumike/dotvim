@@ -1,53 +1,37 @@
-local packer = require("packer")
-
-local function modfns(mod)
-  return {
-    setup = (mod.setup ~= nil),
-    config = (mod.config ~= nil)
-  }
-end
-
-local function use(...)
-  local specs = {...}
-
-  packer.startup(function(use)
-    for _, spec in ipairs(specs) do
-      if (type(spec) == "table" and spec.mod ~= nil) then
-        local mod = require("lconfig.plugins." .. spec.mod)
-        local fns = modfns(mod)
-
-        if fns.setup then
-          spec.setup = string.format("require(\"lconfig.plugins.%s\").setup()", spec.mod)
-        end
-
-        if fns.config then
-          spec.config = string.format("require(\"lconfig.plugins.%s\").config()", spec.mod)
-        end
-      end
-
-      use(spec)
-    end
-  end)
-end
-
-return use(
-  "wbthomason/packer.nvim",
-  "joshdick/onedark.vim",
-  "leafgarland/typescript-vim",
-  "peitalin/vim-jsx-typescript",
-  "guns/vim-clojure-static",
-  "Olical/conjure",
-  {"nvim-telescope/telescope-fzf-native.nvim", run = "make"},
-  {"nvim-telescope/telescope.nvim", mod = "telescope", requires = {
+return require("packer").startup(function(use)
+  use "wbthomason/packer.nvim"
+  use "joshdick/onedark.vim"
+  use "EdenEast/nightfox.nvim"
+  use "leafgarland/typescript-vim"
+  use "peitalin/vim-jsx-typescript"
+  use "guns/vim-clojure-static"
+  use "Olical/conjure"
+  use "lifepillar/pgsql.vim"
+  use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
+  use {"nvim-telescope/telescope.nvim", requires = {
     {"nvim-lua/plenary.nvim"}
-  }},
-  "tpope/vim-fugitive",
-  {"guns/vim-sexp", mod = "sexp"},
-  "tpope/vim-sexp-mappings-for-regular-people",
-  "tpope/vim-surround",
-  {"scrooloose/nerdtree", mod = "nerdtree"},
-  {"neovim/nvim-lspconfig", mod = "lspconfig"},
-  {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", mod = "treesitter"},
-  "nvim-treesitter/nvim-treesitter-textobjects",
-  "nvim-treesitter/playground"
-)
+  }}
+  use "tpope/vim-fugitive"
+  use {"guns/vim-sexp"}
+  use "tpope/vim-sexp-mappings-for-regular-people"
+  use "tpope/vim-surround"
+  use {"scrooloose/nerdtree"}
+
+  use "neovim/nvim-lspconfig"
+
+  -- Completion
+  use "L3MON4D3/LuaSnip"
+  use {"hrsh7th/nvim-cmp"}
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "saadparwaiz1/cmp_luasnip"
+
+  use { 'tpope/vim-dadbod' }
+  use { 'kristijanhusak/vim-dadbod-ui' }
+
+  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+  use "nvim-treesitter/nvim-treesitter-textobjects"
+  use "nvim-treesitter/playground"
+end)

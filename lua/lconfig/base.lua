@@ -30,7 +30,7 @@ vim.opt.statusline = "%F [%Y]%=%m%R %3p%% [%l:%v/%L]"
 vim.opt.laststatus = 2
 
 -- Disable opening top buffer with help info
-vim.opt.completeopt = {"menu", "longest"}
+vim.opt.completeopt = {"menu", "menuone", "noselect"}
 
 -- Ignore some patterns when expanding wildcards
 vim.opt.wildignore = {
