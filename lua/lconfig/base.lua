@@ -48,3 +48,5 @@ vim.opt.wildignore = {
 -- Define leader keys
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = ","
+
+vim.cmd [[autocmd TermOpen * setlocal nonumber norelativenumber]]
