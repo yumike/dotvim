@@ -1,6 +1,7 @@
 return require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
   use { "joshdick/onedark.vim" }
+  use { "EdenEast/nightfox.nvim" }
   use { "leafgarland/typescript-vim" }
   use { "peitalin/vim-jsx-typescript" }
   use { "guns/vim-clojure-static" }
