@@ -11,6 +11,7 @@ return require("packer").startup(function(use)
     { "nvim-lua/plenary.nvim" }
   }}
   use { "tpope/vim-fugitive" }
+  use { "lewis6991/gitsigns.nvim" }
   use { "guns/vim-sexp" }
   use { "tpope/vim-sexp-mappings-for-regular-people" }
   use { "tpope/vim-surround" }
