@@ -3,6 +3,7 @@ require("lconfig.colors")
 require("lconfig.indent")
 require("lconfig.search")
 require("lconfig.filetypes")
+require("lconfig.terminal")
 
 require("lconfig.plugins")
 require("lconfig.plugins.luasnip")
