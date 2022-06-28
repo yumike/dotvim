@@ -3,7 +3,7 @@ local M = {}
 
 M.config = function()
   local telescope = require("telescope")
-  telescope.setup()
+  telescope.setup {}
   telescope.load_extension("fzf")
 
   util.noremap("n", "<Leader>ff", ":Telescope find_files<CR>")
