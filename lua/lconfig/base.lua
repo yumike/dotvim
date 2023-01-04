@@ -26,7 +26,7 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 1
 
 -- Status line
-vim.opt.statusline = "%F [%Y]%=%m%R %3p%% [%l:%v/%L]"
+vim.opt.statusline = "%F [%Y] [%{get(b:,'gitsigns_head','')}]%=%m%R %3p%% [%l:%v/%L]"
 vim.opt.laststatus = 2
 
 -- Disable opening top buffer with help info
