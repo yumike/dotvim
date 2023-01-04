@@ -18,7 +18,7 @@ return require("packer").startup(function(use)
   use { "tpope/vim-surround" }
 
   use { "neovim/nvim-lspconfig" }
-  use { "folke/lua-dev.nvim" }
+  use { "folke/neodev.nvim" }
 
   -- Completion
   use { "L3MON4D3/LuaSnip" }
