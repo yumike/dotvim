@@ -4,8 +4,6 @@ return require("packer").startup(function(use)
   use { "EdenEast/nightfox.nvim" }
   use { "leafgarland/typescript-vim" }
   use { "peitalin/vim-jsx-typescript" }
-  use { "guns/vim-clojure-static" }
-  use { "Olical/conjure" }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope.nvim", requires = {
     { "nvim-lua/plenary.nvim" }
@@ -17,9 +15,12 @@ return require("packer").startup(function(use)
   use { "rest-nvim/rest.nvim", requires = {
     { "nvim-lua/plenary.nvim" }
   }}
+
+  -- Clojure
+  use { "Olical/conjure" }
+  use { "clojure-vim/clojure.vim" }
   use { "guns/vim-sexp" }
   use { "tpope/vim-sexp-mappings-for-regular-people" }
-  use { "tpope/vim-surround" }
 
   use { "neovim/nvim-lspconfig" }
   use { "folke/neodev.nvim" }
