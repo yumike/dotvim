@@ -23,7 +23,7 @@ vim.opt.fillchars = {diff = "·"}
 vim.opt.showcmd = true
 
 -- Set minimal command-line height
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 
 -- Status line
 vim.opt.statusline = "%F [%Y] [%{get(b:,'gitsigns_head','')}]%=%m%R %3p%% [%l:%v/%L]"
