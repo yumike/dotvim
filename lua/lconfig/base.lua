@@ -13,6 +13,8 @@ vim.opt.scrolloff = 2
 -- Don't wrap long lines
 vim.opt.wrap = false
 
+vim.opt.conceallevel = 2
+
 -- Show filler and split vertically by default in diff mode
 vim.opt.diffopt = {"filler", "vertical"}
 
