@@ -22,6 +22,7 @@ return require("packer").startup(function(use)
   use { "guns/vim-sexp" }
   use { "tpope/vim-sexp-mappings-for-regular-people" }
 
+  -- LSP
   use { "neovim/nvim-lspconfig" }
   use { "folke/neodev.nvim" }
 
