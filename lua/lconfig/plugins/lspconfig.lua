@@ -34,6 +34,9 @@ M.config = function()
     capabilities = capabilities,
   })
 
+  -- Disable diagnostics for clojure log files
+  vim.cmd [[autocmd BufNewFile conjure-log-* lua vim.diagnostic.disable(0)]]
+
   lspconfig.rust_analyzer.setup({
     on_attach = on_attach,
     capabilities = capabilities,
